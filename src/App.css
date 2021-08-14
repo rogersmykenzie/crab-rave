@@ -1,5 +1,51 @@
 .App {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.fixedContainer {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.fixedContainer > button {
+  height: 30px;
+}
+.fixedContainer > input {
+  height: 24px;
+}
+
+ul {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  z-index: 1;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  animation: dance 3s forwards infinite linear;
+}
+
+@keyframes dance {
+  0% { transform: translateY(0px) }
+  25% { transform: translateY(-50px) }
+  50% { transform: translateY(0px) }
+  100% { transform: translateY(50px) }
 }
 
 .App-logo {
